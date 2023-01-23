@@ -2,6 +2,9 @@
 
 Basic .NET CLI Cheat Sheet with the list of commands and to use when learning .NET 6, the command line and Visual Studio Code
 
+link za YT video: https://youtu.be/fuBi4d7k1-M
+
+
 ---
 
 ## Checks
@@ -15,7 +18,7 @@ dotnet --version
 Show available templates:
 
 ```dotnet
-dotnet new
+dotnet new list
 ```
 
 
@@ -31,6 +34,9 @@ dotnet new sln --name MySolutionName
 // OR
 
 dotnet new sln -o MySolutionName
+
+
+dotnet new gitignore
 ```
 
 
@@ -43,7 +49,7 @@ In the simplest terms, a project template represents the type of application tha
 ```dotnet
 cd MySolutionName
 
-dotnet new console --framework net6.0 -o MyProjectName
+dotnet new console --framework net6.0 -o MyProjectName 
 ```
 
 #### Add a console project to a solution (with namespace, class and Main() method):
@@ -61,7 +67,7 @@ cd MySolutionName
 
 dotnet new classlib --framework net6.0 -o MyLibraryName
 
-dotnet sln add MyLibraryName\MyLibraryName.csproj
+dotnet sln MySolutionName add MyLibraryName\MyLibraryName.csproj
 ```
 
 
@@ -79,19 +85,20 @@ dotnet new console -o SecondProject --framework net6.0  --use-program-main
 
 
 // Adds "SecondProject.csproj" folder reference to "FirstProject.csproj" folder
+
 dotnet add FirstProject/FirstProject.csproj reference SecondProject/SecondProject.csproj
 ```
 
 
 ## Project building and runing
 
-Build current’s folder solution or project:
+Build currentï¿½s folder solution or project:
 
 ```dotnet
 dotnet build
 ```
 
-Run current’s folder project:
+Run currentï¿½s folder project:
 
 ```dotnet
 dotnet run
