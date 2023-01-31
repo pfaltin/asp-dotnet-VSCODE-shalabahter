@@ -15,6 +15,7 @@ The proposals were adopted from [MS C# Coding Conventions](https://github.com/do
 | Method name               | PascalCase | Yes    | [A-z][0-9]         | No          |
 | Method arguments          | camelCase  | Yes    | [A-z][0-9]         | No          |
 | Local variables           | camelCase  | Yes    | [A-z][0-9]         | No          |
+| Private variables         | _camelCase | Yes    | [A-z][0-9][_]       | Yes         |
 | Constants name            | PascalCase | No     | [A-z][0-9]         | No          |
 | Field name                | camelCase  | Yes    | [A-z][0-9]         | Yes         |
 | Properties name           | PascalCase | Yes    | [A-z][0-9]         | No          |
